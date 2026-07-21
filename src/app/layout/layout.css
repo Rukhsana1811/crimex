@@ -1,0 +1,87 @@
+.defy-logo {
+  max-height: 50px;
+  width: auto;
+}
+
+.defy-link {
+  line-height: 1.1;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Hides standard Bootstrap arrow icon */
+.defy-nav-links .dropdown-toggle::after {
+  display: none;
+}
+
+.defy-dropdown-menu {
+  min-width: 180px;
+  border-radius: 0px !important; /* Sharp boxes like the screenshots */
+  margin-top: 0px !important; 
+}
+
+.defy-dropdown-menu .dropdown-item {
+  color: #222;
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+.defy-dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+/* --- THE HOVER TRICK FOR LARGE SCREENS --- */
+@media (min-width: 1200px) {
+  /* Trigger visibility when parent list-item is hovered */
+  .defy-nav-links .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Make the text orange and apply the underline on hover */
+  .defy-nav-links .nav-item.dropdown:hover .defy-link,
+  .defy-link:hover {
+    color: #f18a21 !important;
+    border-bottom: 3px solid #f18a21 !important;
+  }
+}
+
+/* BUTTONS */
+.btn-defy-orange {
+  background-color: #f18a21 !important;
+  color: white !important;
+  border: 1px solid #e27d1a;
+  font-weight: 500;
+}
+.btn-defy-orange:hover {
+  background-color: #e27d1a !important;
+}
+
+.btn-defy-dark {
+  background-color: #2e2e2e !important;
+  color: #f18a21 !important;
+  border: none;
+  font-weight: 500;
+}
+.btn-defy-dark:hover {
+  background-color: #1a1a1a !important;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 1199.98px) {
+  .defy-nav-links .nav-link {
+    display: inline-block;
+    padding: 10px 0;
+  }
+  .defy-cta-group {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+  .defy-cta-group .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
