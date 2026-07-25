@@ -1,20 +1,33 @@
+:host {
+  display: block;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
 .reveal {
   opacity: 0;
-  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform;
 }
 
 .reveal-left {
-  transform: translateX(-50px);
+  transform: translate3d(-40px, 0, 0);
 }
 
 .reveal-right {
-  transform: translateX(50px);
+  transform: translate3d(40px, 0, 0);
 }
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
 }
 
 /* Hero Section Container */
