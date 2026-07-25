@@ -1,3 +1,22 @@
+.reveal {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+.reveal-right {
+  transform: translateX(50px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Hero Section Container */
 .hero-section {
   min-height: 500px; /* Good default height */
@@ -5,7 +24,7 @@
   background-color: #000;
   
   /* Replace the URL below with your actual black and white background image path */
-  background-image: url('https://i.ibb.co/3sZqGfW/defy-hero-bg.png'); 
+  background-image: url('../../assets/image2.webp'); 
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
