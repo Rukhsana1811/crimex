@@ -36,7 +36,7 @@
 
 /* Custom Color Tweaks */
 .text-orange {
-  color: #f18a21 !important; /* Matches the custom orange brand accent from the navbar */
+  color: #84B00E !important; /* Matches the custom orange brand accent from the navbar */
 }
 
 .hero-title {
@@ -67,19 +67,17 @@
   }
 }
 
-
-
 /* Color Palette Settings & Utilities Override */
 .bg-dark {
   background-color: #1a1a1a !important;
 }
 
 .text-warning {
-  color: #e68a24 !important;
+  color: #84B00E !important;
 }
 
 .border-warning {
-  border-color: #e68a24 !important;
+  border-color: #84B00E !important;
 }
 
 .tracking-wider {
@@ -120,14 +118,14 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: radial-gradient(circle, #f3ac56 0%, #ba6709 100%);
+  background: radial-gradient(circle, #84B00E 0%, #84B00E 100%);
   border: 2px solid #fff;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
 .stats-bar .bullet-dot {
-  border: 1.5px solid #e68a24;
+  border: 1.5px solid #84B00E;
 }
 
 /* Section 5 Typography Setup Adjustment */
@@ -146,18 +144,18 @@
 
 /* Color Scheme Palette Extensions */
 .btn-orange {
-  background-color: #e68a24 !important;
-  border-color: #e68a24 !important;
+  background-color: #84B00E !important;
+  border-color: #84B00E !important;
   transition: background-color 0.2s ease-in-out;
 }
 
 .btn-orange:hover, .btn-orange:focus {
-  background-color: #c97317 !important;
-  border-color: #c97317 !important;
+  background-color: #84B00E !important;
+  border-color: #84B00E !important;
 }
 
 .text-warning {
-  color: #e68a24 !important;
+  color: #84B00E !important;
 }
 
 .bg-dark {
@@ -261,18 +259,18 @@
 
 /* Color Palette Additions */
 .text-orange {
-  color: #e68a24 !important;
+  color: #84B00E !important;
 }
 
 .btn-orange {
-  background-color: #e68a24 !important;
-  border: 1px solid #d47a1c !important;
+  background-color: #84B00E !important;
+  border: 1px solid #84B00E !important;
 }
 
 .btn-orange:hover,
 .btn-orange:focus {
-  background-color: #d47a1c !important;
-  border-color: #c26f17 !important;
+  background-color: #84B00E !important;
+  border-color: #84B00E !important;
   transform: translateY(-1px);
 }
 
@@ -293,8 +291,8 @@
 .newsletter-section {
   background-color: #f4f4f4; /* Light center background */
   background-image: 
-    linear-gradient(135deg, #e68a24 25%, transparent 25.1%),
-    linear-gradient(225deg, #e68a24 25%, transparent 25.1%);
+    linear-gradient(135deg, #84B00E 25%, transparent 25.1%),
+    linear-gradient(225deg, #84B00E 25%, transparent 25.1%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 220px;
@@ -308,8 +306,8 @@
 @media (max-width: 767.98px) {
   .newsletter-section {
     background-image: 
-      linear-gradient(135deg, #e68a24 15%, transparent 15.1%),
-      linear-gradient(225deg, #e68a24 15%, transparent 15.1%);
+      linear-gradient(135deg, #84B00E 15%, transparent 15.1%),
+      linear-gradient(225deg, #84B00E 15%, transparent 15.1%);
   }
   .section-title {
     font-size: 1.6rem;
@@ -319,7 +317,7 @@
 @media (min-width: 1400px) {
   .newsletter-section {
     background-image: 
-      linear-gradient(135deg, #e68a24 28%, transparent 28.1%),
-      linear-gradient(225deg, #e68a24 28%, transparent 28.1%);
+      linear-gradient(135deg, #84B00E 28%, transparent 28.1%),
+      linear-gradient(225deg, #84B00E 28%, transparent 28.1%);
   }
 }

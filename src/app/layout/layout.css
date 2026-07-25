@@ -44,25 +44,25 @@
   /* Make the text orange and apply the underline on hover */
   .defy-nav-links .nav-item.dropdown:hover .defy-link,
   .defy-link:hover {
-    color: #f18a21 !important;
-    border-bottom: 3px solid #f18a21 !important;
+    color: #84B00E !important;
+    border-bottom: 3px solid #84B00E !important;
   }
 }
 
 /* BUTTONS */
 .btn-defy-orange {
-  background-color: #f18a21 !important;
+  background-color: #84B00E !important;
   color: white !important;
-  border: 1px solid #e27d1a;
+  border: 1px solid #84B00E;
   font-weight: 500;
 }
 .btn-defy-orange:hover {
-  background-color: #e27d1a !important;
+  background-color: #84B00E !important;
 }
 
 .btn-defy-dark {
   background-color: #2e2e2e !important;
-  color: #f18a21 !important;
+  color: #84B00E !important;
   border: none;
   font-weight: 500;
 }
