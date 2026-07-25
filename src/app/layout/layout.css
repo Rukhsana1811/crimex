@@ -85,3 +85,42 @@
     margin: 5px 0;
   }
 }
+
+
+.main-footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-bg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  /* background-image: url('assets/images/footer-hug-bg.jpg'); */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.logo-card img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
