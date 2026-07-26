@@ -1,52 +1,67 @@
-<nav class="navbar navbar-expand-xl navbar-light bg-white border-bottom shadow-sm py-2 px-xl-5">
+<nav class="navbar navbar-expand-xl navbar-light bg-white border-bottom shadow-sm py-2 px-xl-5 navbar-floating"
+  [class.scrolled]="isScrolled">
   <div class="container-fluid">
 
     <!-- BRAND LOGO -->
-    <a class="navbar-brand d-flex align-items-center me-4" routerLink="/home" routerLinkActive="active">
+    <a class="navbar-brand d-flex align-items-center me-4" routerLink="/home" routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }">
       <img src="assets/logo.png" alt="Crimexgug Logo" class="defy-logo img-fluid" />
     </a>
 
     <!-- MOBILE TOGGLER -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defyNavbar">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
     <!-- COLLAPSIBLE CONTENT -->
-    <div class="collapse navbar-collapse" id="defyNavbar">
+    <div class="navbar-menu" [class.active]="isMenuOpen">
 
       <!-- NAVIGATION LINKS -->
       <ul class="navbar-nav defy-nav-links ms-xl-auto mb-2 mb-xl-0 align-items-xl-center text-center">
 
         <li class="nav-item px-xl-2">
-          <a class="nav-link text-dark defy-link" routerLink="/">Home</a>
-        </li>
-        <li class="nav-item px-xl-2">
-          <a class="nav-link text-dark defy-link" routerLink="/about-us">Über&nbsp;Uns</a>
+          <a class="nav-link text-dark defy-link" routerLink="/" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Home</a>
         </li>
 
         <li class="nav-item px-xl-2">
-          <a class="nav-link text-dark defy-link" routerLink="/contact">Kontakt</a>
+          <a class="nav-link text-dark defy-link" routerLink="/about-us" routerLinkActive="active"
+            (click)="closeMenu()">Über&nbsp;Uns</a>
         </li>
 
         <li class="nav-item px-xl-2">
-          <a class="nav-link text-dark defy-link" routerLink="/concept">Konzepte</a>
+          <a class="nav-link text-dark defy-link" routerLink="/contact" routerLinkActive="active"
+            (click)="closeMenu()">Kontakt</a>
         </li>
+
         <li class="nav-item px-xl-2">
-          <a class="nav-link text-dark defy-link" routerLink="/supporter">Unterstützer </a>
+          <a class="nav-link text-dark defy-link" routerLink="/concept" routerLinkActive="active"
+            (click)="closeMenu()">Konzepte</a>
         </li>
+
         <li class="nav-item px-xl-2">
-          <a class="nav-link text-dark defy-link" routerLink="/feedback">Feedbag</a>
+          <a class="nav-link text-dark defy-link" routerLink="/supporter" routerLinkActive="active"
+            (click)="closeMenu()">Unterstützer</a>
         </li>
+
         <li class="nav-item px-xl-2">
-          <a class="nav-link text-dark defy-link" routerLink="/imprint">Impressum </a>
+          <a class="nav-link text-dark defy-link" routerLink="/feedback" routerLinkActive="active"
+            (click)="closeMenu()">Feedback</a>
+        </li>
+
+        <li class="nav-item px-xl-2">
+          <a class="nav-link text-dark defy-link" routerLink="/imprint" routerLinkActive="active"
+            (click)="closeMenu()">Impressum</a>
         </li>
 
       </ul>
 
       <div class="d-flex defy-cta-group ms-xl-4 align-items-center justify-content-center">
-        <a href="#" class="btn btn-defy-dark me-2">EITs Click Here</a>
-        <a href="#" class="btn btn-defy-orange me-2">Donate</a>
-        <a href="#" class="btn btn-defy-orange">Volunteer</a>
+        <a href="#" class="btn btn-defy-dark me-2" (click)="closeMenu()">EITs&nbsp;Click&nbsp;Here</a>
+        <a href="#" class="btn btn-defy-orange me-2" (click)="closeMenu()">Donate</a>
+        <a href="#" class="btn btn-defy-orange" (click)="closeMenu()">Volunteer</a>
       </div>
 
     </div>
@@ -66,7 +81,7 @@
 
       <div class="d-flex align-items-center justify-content-center gap-3 flex-wrap">
 
-        <button class="btn btn-outline-light border-0  rounded-circle py-2" type="button" data-bs-target="#logoCarousel"
+        <button class="btn btn-outline-light border-0 rounded-circle py-2" type="button" data-bs-target="#logoCarousel"
           data-bs-slide="prev">
           &larr;
         </button>
@@ -128,7 +143,7 @@
           </div>
         </div>
 
-        <button class="btn btn-outline-light border-0 rounded-circle  py-2" type="button" data-bs-target="#logoCarousel"
+        <button class="btn btn-outline-light border-0 rounded-circle py-2" type="button" data-bs-target="#logoCarousel"
           data-bs-slide="next">
           &rarr;
         </button>
@@ -146,19 +161,39 @@
 
       <div class="col-6 col-md-3 reveal reveal-left">
         <ul class="list-unstyled footer-links message-list">
-          <li class="mb-3"><a href="#" class="text-white text-decoration-none hover-white fw-medium" routerLink="/home">Home</a></li>
-          <li class="mb-3"><a href="#" class="text-white text-decoration-none hover-white fw-medium" routerLink="/about-us">Über&nbsp;Uns</a>
+          <li class="mb-3">
+            <a href="javascript:void(0)" class="text-white text-decoration-none hover-white fw-medium"
+              (click)="onFooterLinkClick('/')">Home</a>
           </li>
-          <li class="mb-3"><a href="#" class="text-white text-decoration-none hover-white fw-medium" routerLink="/contact">Kontakt</a></li>
+          <li class="mb-3">
+            <a href="javascript:void(0)" class="text-white text-decoration-none hover-white fw-medium"
+              (click)="onFooterLinkClick('/about-us')">Über&nbsp;Uns</a>
+          </li>
+          <li class="mb-3">
+            <a href="javascript:void(0)" class="text-white text-decoration-none hover-white fw-medium"
+              (click)="onFooterLinkClick('/contact')">Kontakt</a>
+          </li>
         </ul>
       </div>
 
       <div class="col-6 col-md-3">
         <ul class="list-unstyled footer-links message-list">
-          <li class="mb-3"><a href="#" class="text-white text-decoration-none hover-white fw-medium" routerLink="/concept">Konzepte</a></li>
-          <li class="mb-3"><a href="#" class="text-white text-decoration-none hover-white fw-medium" routerLink="/supporter">Unterstützer</a></li>
-          <li class="mb-3"><a href="#" class="text-white text-decoration-none hover-white fw-medium" routerLink="/feedback">Feedbag</a></li>
-          <li class="mb-3"><a href="#" class="text-white text-decoration-none hover-white fw-medium" routerLink="/imprint">Impressum</a></li>
+          <li class="mb-3">
+            <a href="javascript:void(0)" class="text-white text-decoration-none hover-white fw-medium"
+              (click)="onFooterLinkClick('/concept')">Konzepte</a>
+          </li>
+          <li class="mb-3">
+            <a href="javascript:void(0)" class="text-white text-decoration-none hover-white fw-medium"
+              (click)="onFooterLinkClick('/supporter')">Unterstützer</a>
+          </li>
+          <li class="mb-3">
+            <a href="javascript:void(0)" class="text-white text-decoration-none hover-white fw-medium"
+              (click)="onFooterLinkClick('/feedback')">Feedback</a>
+          </li>
+          <li class="mb-3">
+            <a href="javascript:void(0)" class="text-white text-decoration-none hover-white fw-medium"
+              (click)="onFooterLinkClick('/imprint')">Impressum</a>
+          </li>
         </ul>
       </div>
 
@@ -169,12 +204,24 @@
         <p class="small mb-4 opacity-70">Los Angeles, CA 90010</p>
 
         <div class="d-flex gap-3 fs-5 social-icons">
-          <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="bi bi-linkedin"></i></a>
-          <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="bi bi-google"></i></a>
-          <a href="#" class="text-white opacity-75 hover-opacity-100"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white opacity-75 hover-opacity-100" (click)="$event.preventDefault()">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" class="text-white opacity-75 hover-opacity-100" (click)="$event.preventDefault()">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-white opacity-75 hover-opacity-100" (click)="$event.preventDefault()">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-white opacity-75 hover-opacity-100" (click)="$event.preventDefault()">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="#" class="text-white opacity-75 hover-opacity-100" (click)="$event.preventDefault()">
+            <i class="bi bi-google"></i>
+          </a>
+          <a href="#" class="text-white opacity-75 hover-opacity-100" (click)="$event.preventDefault()">
+            <i class="bi bi-youtube"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -182,9 +229,15 @@
     <hr class="border-secondary opacity-25 my-4">
 
     <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 small text-white-50">
-      <div><a href="#" class="text-white-50 text-decoration-none hover-white">Privacy policy</a></div>
+      <div>
+        <a href="javascript:void(0)" class="text-white-50 text-decoration-none hover-white"
+          (click)="onFooterLinkClick('/')">Privacy policy</a>
+      </div>
       <div>&copy; 2026, Crimexgug</div>
-      <div><a href="#" class="text-white-50 text-decoration-none hover-white">Terms and conditions</a></div>
+      <div>
+        <a href="javascript:void(0)" class="text-white-50 text-decoration-none hover-white"
+          (click)="onFooterLinkClick('/')">Terms and conditions</a>
+      </div>
     </div>
 
   </div>
