@@ -1,1 +1,356 @@
 /* You can add global styles to this file, and also import other style files */
+/* Hero Section Container */
+.hero-section {
+  min-height: 500px; /* Good default height */
+  height: 60vh;      /* Scales nicely across different desktop monitors */
+  background-color: #000;
+  
+  /* Replace the URL below with your actual black and white background image path */
+  background-image: url('assets/image2.webp'); 
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+/* Linear Gradient Overlay: Fades dark black from the left to transparent on the right */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 90%);
+  z-index: 1;
+}
+
+/* Ensure the text container sits neatly on top of the background gradient overlay */
+.z-2 {
+  z-index: 2;
+}
+
+/* The vertical accent bar on the left */
+.hero-accent-line {
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Custom Color Tweaks */
+.text-orange {
+  color: #84B00E !important; /* Matches the custom orange brand accent from the navbar */
+}
+
+.hero-title {
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+/* Responsive Overrides for Mobile Screens */
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 400px;
+    height: auto;
+    padding: 80px 0;
+    background-position: 75% center; /* Adjusts background crop position for narrow mobile screens */
+  }
+  
+  /* Stronger mobile background mask overlay since text wraps over the subject's face on small screens */
+  .hero-section::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%);
+  }
+  
+  .hero-title {
+    font-size: 2.25rem !important;
+  }
+  
+  .hero-accent-line {
+    margin-right: 15px !important;
+  }
+}
+
+
+:host {
+  display: block;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left {
+  transform: translate3d(-40px, 0, 0);
+}
+
+.reveal-right {
+  transform: translate3d(40px, 0, 0);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Color Palette Settings & Utilities Override */
+.bg-dark {
+  background-color: #1a1a1a !important;
+}
+
+.text-warning {
+  color: #84B00E !important;
+}
+
+.border-warning {
+  border-color: #84B00E !important;
+}
+
+.tracking-wider {
+  letter-spacing: 0.125em;
+}
+
+.opacity-90 {
+  opacity: 0.90;
+}
+
+.gray-scale {
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
+
+.gray-scale:hover {
+  filter: grayscale(0%);
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+.min-vh-40 {
+  min-height: 40vh;
+}
+
+/* Custom Element Details */
+/* Section 1: Problem Container Offset Frame Customization */
+.problem-content-box {
+  border-top-left-radius: 4px;
+}
+
+/* Custom Circular Dynamic Bullet List Components */
+.custom-bullets-list .bullet-dot,
+.stats-bar .bullet-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, #84B00E 0%, #84B00E 100%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.stats-bar .bullet-dot {
+  border: 1.5px solid #84B00E;
+}
+
+/* Section 5 Typography Setup Adjustment */
+.vision-accent-line {
+  content: "";
+  display: inline-block;
+}
+
+/* Desktop Fine-tuning adjustments */
+@media (min-width: 768px) {
+  .min-vh-50 {
+    min-height: 65vh;
+  }
+}
+
+
+/* Color Scheme Palette Extensions */
+.btn-orange {
+  background-color: #84B00E !important;
+  border-color: #84B00E !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-orange:hover, .btn-orange:focus {
+  background-color: #84B00E !important;
+  border-color: #84B00E !important;
+}
+
+.text-warning {
+  color: #84B00E !important;
+}
+
+.bg-dark {
+  background-color: #1a1a1a !important;
+}
+
+/* Gray-scale Layout Filter Utility */
+.gray-scale {
+  filter: grayscale(100%);
+  transition: filter 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gray-scale:hover {
+  filter: grayscale(0%);
+}
+
+.min-vh-50 {
+  min-height: 45vh;
+}
+
+.max-w-md {
+  max-width: 480px;
+}
+
+.max-w-lg {
+  max-width: 800px;
+}
+
+/* Hover Link Subtleties */
+.hover-underline:hover {
+  text-decoration: underline !important;
+}
+
+.hover-white:hover {
+  color: #ffffff !important;
+}
+
+.hover-opacity-100:hover {
+  opacity: 1 !important;
+}
+
+.diagonal-mask {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 120px solid #f8f9fa; /* Matches standard light gray bg page flows */
+  z-index: 0;
+}
+
+/* Main Footer Container Structural Overlay Layouts */
+.main-footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-bg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  /* background-image: url('assets/images/footer-hug-bg.jpg'); */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+/* Logo Showcase Formatting Rules */
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.logo-card img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Media Query Fine Tuning Breakdown adjustments */
+@media (min-width: 768px) {
+  .min-vh-50 {
+    min-height: 55vh;
+  }
+}
+
+/* Color Palette Additions */
+.text-orange {
+  color: #84B00E !important;
+}
+
+.btn-orange {
+  background-color: #84B00E !important;
+  border: 1px solid #84B00E !important;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color: #84B00E !important;
+  border-color: #84B00E !important;
+  transform: translateY(-1px);
+}
+
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+.tracking-wider {
+  letter-spacing: 0.08em;
+}
+
+/* Base Font Layout Tweaks */
+.section-title {
+  font-size: 2rem;
+}
+
+/* Double Angled Background Mask Layer */
+.newsletter-section {
+  background-color: #f4f4f4; /* Light center background */
+  background-image: 
+    linear-gradient(135deg, #84B00E 25%, transparent 25.1%),
+    linear-gradient(225deg, #84B00E 25%, transparent 25.1%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 220px;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+/* Responsive adjustments for the background geometric cuts */
+@media (max-width: 767.98px) {
+  .newsletter-section {
+    background-image: 
+      linear-gradient(135deg, #84B00E 15%, transparent 15.1%),
+      linear-gradient(225deg, #84B00E 15%, transparent 15.1%);
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .newsletter-section {
+    background-image: 
+      linear-gradient(135deg, #84B00E 28%, transparent 28.1%),
+      linear-gradient(225deg, #84B00E 28%, transparent 28.1%);
+  }
+}
