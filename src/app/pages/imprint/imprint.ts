@@ -1,13 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  template: `
-    <section class="container py-5">
-      <h1 class="display-6 fw-bold mb-3">Imprint</h1>
-      <p class="lead text-secondary">Legal and publisher information can be placed here.</p>
-    </section>
-  `,
+  templateUrl: './imprint.html',
+  styleUrls: ['./imprint.css'],
 })
-export class Imprint {}
+export class Imprint implements AfterViewInit, OnDestroy  {
+  private observer?: IntersectionObserver;
+
+  ngAfterViewInit(): void {
+    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
+
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            this.observer?.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    elements.forEach((element) => this.observer?.observe(element));
+  }
+
+  ngOnDestroy(): void {
+    this.observer?.disconnect();
+  }
+}
+
+

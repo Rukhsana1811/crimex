@@ -4,6 +4,7 @@ import { AfterViewInit, Component, OnDestroy } from '@angular/core';
   selector: 'app-about-us',
   standalone: true,
   templateUrl: './about-us.html',
+  styleUrls: ['./about-us.css'],
 })
 export class AboutUs implements AfterViewInit, OnDestroy {
    private observer?: IntersectionObserver;

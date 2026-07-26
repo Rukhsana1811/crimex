@@ -4,6 +4,7 @@ import { AfterViewInit, Component, OnDestroy } from '@angular/core';
   selector: 'app-contact',
   standalone: true,
   templateUrl: './contact.html',
+  styleUrl: './contact.css',
 })
 export class Contact implements AfterViewInit, OnDestroy  {
   private observer?: IntersectionObserver;

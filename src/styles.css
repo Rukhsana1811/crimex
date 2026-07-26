@@ -31,8 +31,9 @@
 
 /* The vertical accent bar on the left */
 .hero-accent-line {
-  width: 2px;
-  background-color: rgba(255, 255, 255, 0.4);
+    width: 4px !important;
+    background: linear-gradient(180deg, #84b00e 0%, transparent 100%);
+    border-radius: 2px;
 }
 
 /* Custom Color Tweaks */

@@ -1,13 +1,33 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-concept',
   standalone: true,
-  template: `
-    <section class="container py-5">
-      <h1 class="display-6 fw-bold mb-3">Concept</h1>
-      <p class="lead text-secondary">Our concept centers on entrepreneurship as a path to stability and dignity.</p>
-    </section>
-  `,
+  templateUrl: './concept.html',
+  styleUrls: ['./concept.css'],
 })
-export class Concept {}
+export class Concept implements AfterViewInit, OnDestroy {
+  private observer?: IntersectionObserver;
+
+  ngAfterViewInit(): void {
+    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
+
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            this.observer?.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    elements.forEach((element) => this.observer?.observe(element));
+  }
+
+  ngOnDestroy(): void {
+    this.observer?.disconnect();
+  }
+}

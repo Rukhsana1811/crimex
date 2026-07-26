@@ -2,16 +2,289 @@
   <div class="container-fluid px-4 px-md-5 z-2">
     <div class="row">
       <div class="col-xl-6 col-lg-8 col-md-10">
-
         <div class="hero-text-wrapper d-flex align-items-stretch reveal reveal-left">
           <div class="hero-accent-line me-4"></div>
           <div class="hero-content">
             <h1 class="hero-title text-white fw-bold display-4 m-0">
-              Contact <span class="text-orange">Us</span>
+              Get in <span class="text-orange">Touch</span>
             </h1>
+            <p class="hero-subtitle text-white-50 mt-3">We're here to help and answer any questions you might have</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </header>
+
+<!-- Contact Info Section -->
+<section class="contact-info-section py-5 py-md-8">
+  <div class="container-fluid px-4 px-md-5">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card reveal reveal-left">
+          <div class="info-icon-wrapper mb-4">
+            <i class="bi bi-phone text-orange fs-1"></i>
+          </div>
+          <h3 class="fs-5 fw-bold mb-2">Phone</h3>
+          <p class="text-muted mb-2">+1 (555) 123-4567</p>
+          <p class="text-muted small">Available Monday to Friday, 9AM-6PM EST</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card reveal reveal-up">
+          <div class="info-icon-wrapper mb-4">
+            <i class="bi bi-envelope text-orange fs-1"></i>
+          </div>
+          <h3 class="fs-5 fw-bold mb-2">Email</h3>
+          <p class="text-muted mb-2">contact@crimex.com</p>
+          <p class="text-muted small">We'll respond within 24 hours</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="info-card reveal reveal-right">
+          <div class="info-icon-wrapper mb-4">
+            <i class="bi bi-geo-alt text-orange fs-1"></i>
+          </div>
+          <h3 class="fs-5 fw-bold mb-2">Office</h3>
+          <p class="text-muted mb-2">123 Security Ave, Tech City, TC 12345</p>
+          <p class="text-muted small">Visit us by appointment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form-section py-5 py-md-8 bg-dark">
+  <div class="container-fluid px-4 px-md-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="text-center fw-bold display-5 mb-2 reveal reveal-up text-white">Send Us a Message</h2>
+        <p class="text-center text-white-50 mb-5 reveal reveal-up">Fill out the form below and our team will get back to you shortly</p>
+        
+        <form class="contact-form reveal reveal-up">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="firstName" class="form-label text-white">First Name</label>
+                <input type="text" class="form-control form-input" id="firstName" placeholder="John" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="lastName" class="form-label text-white">Last Name</label>
+                <input type="text" class="form-control form-input" id="lastName" placeholder="Doe" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="email" class="form-label text-white">Email Address</label>
+                <input type="email" class="form-control form-input" id="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="phone" class="form-label text-white">Phone Number</label>
+                <input type="tel" class="form-control form-input" id="phone" placeholder="+1 (555) 123-4567">
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="agency" class="form-label text-white">Agency/Organization</label>
+                <input type="text" class="form-control form-input" id="agency" placeholder="Your Agency Name" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="subject" class="form-label text-white">Subject</label>
+                <select class="form-control form-input" id="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="sales">Sales Inquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="demo">Schedule Demo</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="message" class="form-label text-white">Message</label>
+                <textarea class="form-control form-input" id="message" rows="5" placeholder="Tell us more about your needs..." required></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms" required>
+                <label class="form-check-label text-white-50" for="terms">
+                  I agree to the privacy policy and terms of service
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div class="col-12">
+              <button type="submit" class="btn btn-orange btn-lg w-100">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Support Section -->
+<section class="support-section py-5 py-md-8">
+  <div class="container-fluid px-4 px-md-5">
+    <h2 class="text-center fw-bold display-5 mb-5 reveal reveal-up">Quick Support</h2>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="support-card reveal reveal-left">
+          <div class="support-icon mb-3">
+            <i class="bi bi-question-circle text-orange fs-2"></i>
+          </div>
+          <h3 class="fs-6 fw-bold mb-2">FAQ</h3>
+          <p class="text-muted small mb-3">Find answers to common questions</p>
+          <a href="#faq" class="text-orange text-decoration-none small fw-bold">View FAQ →</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="support-card reveal reveal-up">
+          <div class="support-icon mb-3">
+            <i class="bi bi-book text-orange fs-2"></i>
+          </div>
+          <h3 class="fs-6 fw-bold mb-2">Documentation</h3>
+          <p class="text-muted small mb-3">Access our comprehensive guides</p>
+          <a href="#docs" class="text-orange text-decoration-none small fw-bold">View Docs →</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="support-card reveal reveal-right">
+          <div class="support-icon mb-3">
+            <i class="bi bi-youtube text-orange fs-2"></i>
+          </div>
+          <h3 class="fs-6 fw-bold mb-2">Tutorials</h3>
+          <p class="text-muted small mb-3">Watch step-by-step video guides</p>
+          <a href="#tutorials" class="text-orange text-decoration-none small fw-bold">Watch Now →</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="support-card reveal reveal-down">
+          <div class="support-icon mb-3">
+            <i class="bi bi-chat text-orange fs-2"></i>
+          </div>
+          <h3 class="fs-6 fw-bold mb-2">Live Chat</h3>
+          <p class="text-muted small mb-3">Chat with our support team</p>
+          <a href="#chat" class="text-orange text-decoration-none small fw-bold">Start Chat →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sales Inquiry Section -->
+<section class="sales-section py-5 py-md-8 bg-dark">
+  <div class="container-fluid px-4 px-md-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="sales-content reveal reveal-left">
+          <h2 class="fw-bold display-5 mb-3 text-white">Looking for a Custom Solution?</h2>
+          <p class="text-white-50 mb-4">Our sales team can help you find the perfect plan for your organization's needs.</p>
+          <ul class="sales-list">
+            <li class="text-white-50 mb-3"><i class="bi bi-check-circle text-orange me-2"></i>Personalized consultation</li>
+            <li class="text-white-50 mb-3"><i class="bi bi-check-circle text-orange me-2"></i>Custom pricing plans</li>
+            <li class="text-white-50 mb-3"><i class="bi bi-check-circle text-orange me-2"></i>Dedicated account manager</li>
+            <li class="text-white-50"><i class="bi bi-check-circle text-orange me-2"></i>Implementation support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="sales-card reveal reveal-right">
+          <h3 class="fs-5 fw-bold mb-4 text-white">Schedule a Demo</h3>
+          <form class="sales-form">
+            <div class="mb-3">
+              <input type="text" class="form-control form-input" placeholder="Full Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control form-input" placeholder="Email Address" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control form-input" placeholder="Phone Number" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-control form-input" required>
+                <option value="">Select preferred time</option>
+                <option value="morning">Morning (9AM-12PM)</option>
+                <option value="afternoon">Afternoon (12PM-3PM)</option>
+                <option value="evening">Evening (3PM-6PM)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-orange w-100">Schedule Demo</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Office Locations Section -->
+<section class="locations-section py-5 py-md-8">
+  <div class="container-fluid px-4 px-md-5">
+    <h2 class="text-center fw-bold display-5 mb-5 reveal reveal-up">Our Offices</h2>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="location-card reveal reveal-left">
+          <h3 class="fs-6 fw-bold mb-3">Headquarters</h3>
+          <p class="text-muted mb-2"><strong>New York, USA</strong></p>
+          <p class="text-muted small mb-3">123 Security Ave, Tech City, TC 12345</p>
+          <p class="text-muted small">+1 (555) 123-4567</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="location-card reveal reveal-up">
+          <h3 class="fs-6 fw-bold mb-3">Europe Office</h3>
+          <p class="text-muted mb-2"><strong>London, UK</strong></p>
+          <p class="text-muted small mb-3">456 Innovation Street, London, LDN 98765</p>
+          <p class="text-muted small">+44 (20) 7946 0958</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="location-card reveal reveal-right">
+          <h3 class="fs-6 fw-bold mb-3">Asia Pacific</h3>
+          <p class="text-muted mb-2"><strong>Singapore</strong></p>
+          <p class="text-muted small mb-3">789 Tech Boulevard, Singapore, SG 54321</p>
+          <p class="text-muted small">+65 6234 5678</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 py-md-8 bg-dark">
+  <div class="container-fluid px-4 px-md-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center reveal reveal-up">
+        <h2 class="fw-bold display-5 mb-4 text-white">Have Questions?</h2>
+        <p class="fs-5 text-white-50 mb-4">Our team is ready to assist you. Contact us today and let's discuss how CrimeX can help your organization.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a href="mailto:contact@crimex.com" class="btn btn-orange btn-lg">Email Us</a>
+          <a href="tel:+15551234567" class="btn btn-outline-orange btn-lg">Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
