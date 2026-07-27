@@ -6,6 +6,8 @@ import { Contact } from './pages/contact/contact';
 import { Feedback } from './pages/feedback/feedback';
 import { Imprint } from './pages/imprint/imprint';
 import { Supporter } from './pages/supporter/supporter';
+import { TermsAndConditions } from './pages/terms-and-conditions/terms-and-conditions';
+import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,4 +18,6 @@ export const routes: Routes = [
   { path: 'concept', component: Concept },
   { path: 'feedback', component: Feedback },
   { path: 'imprint', component: Imprint },
+  { path: 'terms', component: TermsAndConditions },
+  { path: 'privacy', component: PrivacyPolicy }
 ];

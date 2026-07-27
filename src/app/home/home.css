@@ -283,3 +283,7 @@ body {
       linear-gradient(225deg, #84B00E 28%, transparent 28.1%);
   }
 }
+
+.hero-section { 
+  background-image: url('../../assets/images/home-hero.png') !important;
+}

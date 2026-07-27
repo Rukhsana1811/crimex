@@ -232,7 +232,7 @@
 }
 
 .hero-section {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background-image: url('../../../assets/images/Kontakt(Contact).png') !important;
   min-height: 400px;
   position: relative;
 
