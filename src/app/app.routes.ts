@@ -8,11 +8,17 @@ import { Imprint } from './pages/imprint/imprint';
 import { Supporter } from './pages/supporter/supporter';
 import { TermsAndConditions } from './pages/terms-and-conditions/terms-and-conditions';
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
+import { Ben } from './pages/about-us/ben/ben';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: Home },
-  { path: 'about-us', component: AboutUs },
+  {
+    path: 'about-us', component: AboutUs
+  },
+    {
+    path: 'about-us/ben', component: Ben
+  },
   { path: 'supporter', component: Supporter },
   { path: 'contact', component: Contact },
   { path: 'concept', component: Concept },

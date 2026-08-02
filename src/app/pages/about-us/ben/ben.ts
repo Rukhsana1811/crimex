@@ -1,14 +1,12 @@
-import { AfterViewInit, Component, OnDestroy } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {  AfterViewInit, Component, OnDestroy  } from '@angular/core';
 
 @Component({
-  selector: 'app-about-us',
-  standalone: true,
-  templateUrl: './about-us.html',
-  imports: [RouterLink],
-  styleUrls: ['./about-us.css'],
+  selector: 'app-ben',
+  imports: [],
+  templateUrl: './ben.html',
+  styleUrl: './ben.css',
 })
-export class AboutUs implements AfterViewInit, OnDestroy {
+export class Ben  implements AfterViewInit, OnDestroy {
    private observer?: IntersectionObserver;
 
   ngAfterViewInit(): void {
@@ -33,3 +31,4 @@ export class AboutUs implements AfterViewInit, OnDestroy {
     this.observer?.disconnect();
   }
 }
+
