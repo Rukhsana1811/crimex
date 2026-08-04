@@ -232,9 +232,11 @@
 }
 
 .hero-section {
-  background-image: url('../../../assets/images/Kontakt(Contact).png') !important;
-  min-height: 400px;
+  background-image: url('../../../assets/images/contact-banner.jpeg') !important;
+  /* min-height: 400px; */
   position: relative;
+  background-size: cover;
+  background-position: center;
 
   .hero-accent-line {
     width: 4px;

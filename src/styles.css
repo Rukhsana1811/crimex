@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 /* Hero Section Container */
 .hero-section {
-  min-height: 500px; /* Good default height */
+  min-height: 600px; /* Good default height */
   height: 60vh;      /* Scales nicely across different desktop monitors */
   background-color: #000;
   
   /* Replace the URL below with your actual black and white background image path */
   background-image: url('assets/image2.webp'); 
   background-size: cover;
-  background-position: right center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
