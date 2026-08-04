@@ -1,175 +1,40 @@
-<header class="d-none hero-section d-flex align-items-center position-relative overflow-hidden">
-  <div class="container-fluid px-4 px-md-5 z-2">
-    <div class="row">
-      <div class="col-xl-6 col-lg-8 col-md-10">
-        <div class="hero-text-wrapper d-flex align-items-stretch reveal reveal-left">
-          <div class="hero-accent-line me-4"></div>
-          <div class="hero-content">
-            <h1 class="hero-title text-white fw-bold display-4 m-0">
-              ÜBER <span class="text-orange"> UNS</span>
-            </h1>
-            <p class="hero-subtitle text-white-50 mt-3">Zwei Wege, ein gemeinsames Ziel: Eine Zukunft ohne Kriminalität.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
 <!-- Team Section -->
-<section class="team-section py-5 py-md-8 bg-dark">
+<section class="team-section py-5 py-md-8">
   <div class="container-fluid px-4 px-md-5">
     <h2 class="text-center fw-bold display-5 mb-5 reveal reveal-up text-white">Die Gründer</h2>
     <div class="row g-4">
-      <div class="col-lg-4 col-md-6">
-        <div class="team-card reveal reveal-left">
+
+      <div class="col-lg-6 col-md-6">
+        <div class="team-card reveal reveal-up" routerLink="/about-us/ben">
+          <div class="team-image-wrapper">
+            <img src="assets/images/Ben.jpeg" alt="Benjamin Targan" class="team-image w-100">
+          </div>
+          <div class="bg-light p-3">
+            <h3 class="fs-6 fw-bold mt-3 text-dark">Benjamin Targan</h3>
+            <p class="text-orange fw-bold">Gründer & Anti-Gewalt-Trainer</p>
+            <p class="text-dark small">Die direkte Motivation. Mit ehrlichen Geschichten, Humor und seiner
+              Ausbildung (nach §34a GewO) fesselt er Jugendliche und macht ihnen Mut.</p>
+            <a class="btn btn-orange mb-3" routerLink="/about-us/ben"><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="team-card reveal reveal-right"  routerLink="/about-us/hadi">
           <div class="team-image-wrapper">
             <div class="team-placeholder bg-secondary"></div>
+            <!-- <img src="assets/images/Hadi.jpeg" alt="Hadi Nazari Adli" class="team-image w-100"> -->
           </div>
-          <h3 class="fs-6 fw-bold mt-3">xyz</h3>
-          <!-- <p class="text-orange small">Gründer & Anti-Cybermobbing Experte</p>
-          <p class="text-light small">Die ruhige Kraft. Mit seiner besonnenen, einfühlsamen Art und Kampfsporterfahrung gibt er Jugendlichen Halt und Sicherheit.</p> -->
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="team-card reveal reveal-up">
-          <div class="team-image-wrapper">
-          <img src="assets/Ben.png" alt="Benjamin Targan" class="team-image w-100">
-          </div>
-          <h3 class="fs-6 fw-bold mt-3">Benjamin Targan</h3>
-          <p class="text-orange small">Gründer & Anti-Gewalt-Trainer</p>
-          <p class="text-light small">Die direkte Motivation. Mit ehrlichen Geschichten, Humor und seiner Ausbildung (nach §34a GewO) fesselt er Jugendliche und macht ihnen Mut.</p>
-          <a class="btn btn-orange" routerLink="/about-us/ben"><i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="team-card reveal reveal-right">
-          <div class="team-image-wrapper">
-            <div class="team-placeholder bg-secondary"></div>
-          </div>
-          <h3 class="fs-6 fw-bold mt-3">Hadi Nazari Adli</h3>
-          <p class="text-orange small">Boxtrainer</p>
-          <!-- <p class="text-light small">Strafrechtsexperte. Unterstützt CrimEX mit juristischer Expertise und setzt sich für die Kriminalprävention ein.</p> -->
+          <div class="bg-light p-3">
+            <h3 class="fs-6 fw-bold text-dark">Hadi Nazari Adli</h3>
+            <p class="text-dark small">Boxtrainer</p>
+            <a class="btn btn-orange mb-3" routerLink="/about-us/hadi"><i class="bi bi-arrow-right"></i></a></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Mission & Vision Section -->
-<section class="mission-vision py-5 py-md-8">
-  <div class="container-fluid px-4 px-md-5">
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <div class="mission-card reveal reveal-left">
-          <div class="icon-wrapper mb-4">
-            <i class="bi bi-bookmark-check text-orange fs-1"></i>
-          </div>
-          <h2 class="fs-3 fw-bold mb-3">Unsere Mission</h2>
-          <p class="text-muted">Wir bieten Jugendlichen einen sicheren Raum ohne Verurteilung. Durch ehrliche Gespräche,
-            echte Lebenserfahrung und fundierte Kriminalprävention befähigen wir junge Menschen, ihre Zukunft aktiv,
-            selbstbestimmt und abseits von Kriminalität zu gestalten.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="vision-card reveal reveal-right">
-          <div class="icon-wrapper mb-4">
-            <i class="bi bi-eye text-orange fs-1"></i>
-          </div>
-          <h2 class="fs-3 fw-bold mb-3">Unsere Vision</h2>
-          <p class="text-muted">Die Rückfall- und Jugendkriminalitätsrate nachhaltig senken, indem wir oberflächliche
-            Belehrungen durch authentische Begleitung auf Augenhöhe ersetzen – für eine Gesellschaft, in der jeder eine
-            echte zweite Chance erhält.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Stats Section -->
-<section class="stats-section py-5 py-md-8 bg-dark">
-  <div class="container-fluid px-4 px-md-5">
-    <div class="row g-4 text-center">
-      <div class="col-md-3 col-sm-6">
-        <div class="stat-card reveal reveal-up">
-          <h3 class="stat-number text-orange fw-bold display-5">2024</h3>
-          <p class="stat-label text-white-50">Gründungsjahr</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="stat-card reveal reveal-up">
-          <h3 class="stat-number text-orange fw-bold display-5">100%</h3>
-          <p class="stat-label text-white-50">Lebenserfahrung</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="stat-card reveal reveal-up">
-          <h3 class="stat-number text-orange fw-bold display-5">§34a</h3>
-          <p class="stat-label text-white-50">Zertifiziert (IHK)</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="stat-card reveal reveal-up">
-          <h3 class="stat-number text-orange fw-bold display-5">24/7</h3>
-          <p class="stat-label text-white-50">Einsatz für Jugendliche</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Core Values Section -->
-<section class="values-section py-5 py-md-8">
-  <div class="container-fluid px-4 px-md-5">
-    <h2 class="text-center fw-bold display-5 mb-5 reveal reveal-up">Our Core Values</h2>
-    <div class="row g-4">
-      <div class="col-lg-4 col-md-6">
-        <div class="value-card reveal reveal-left">
-          <div class="value-number">01</div>
-          <h3 class="fs-5 fw-bold">Authentizität</h3>
-          <p class="text-muted">Wir belehren nicht von oben herab. Echte Lebenserfahrung ist unser stärkstes Werkzeug in der Prävention.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="value-card reveal reveal-up">
-          <div class="value-number">02</div>
-          <h3 class="fs-5 fw-bold">Augenhöhe</h3>
-          <p class="text-muted">Wir begegnen Jugendlichen mit Respekt und Verständnis, um echtes Vertrauen und Sicherheit aufzubauen.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="value-card reveal reveal-right">
-          <div class="value-number">03</div>
-          <h3 class="fs-5 fw-bold">Realismus</h3>
-          <p class="text-muted">Wir beschönigen nichts. Wir zeigen die harte Realität von Gefängnis und Kriminalität ungeschönt auf.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="value-card reveal reveal-left">
-          <div class="value-number">04</div>
-          <h3 class="fs-5 fw-bold">Prävention</h3>
-          <p class="text-muted">Wir greifen ein, bevor es zu spät ist. Durch Anti-Gewalt-Training, Boxen und Cybermobbing-Aufklärung.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="value-card reveal reveal-up">
-          <div class="value-number">05</div>
-          <h3 class="fs-5 fw-bold">Gemeinschaft</h3>
-          <p class="text-muted">Niemand wird alleingelassen. Wir fördern soziale Kompetenzen, Empathie und Zusammenhalt.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="value-card reveal reveal-right">
-          <div class="value-number">06</div>
-          <h3 class="fs-5 fw-bold">Verantwortung</h3>
-          <p class="text-muted">Wir helfen jungen Menschen, die Konsequenzen ihres Handelns zu begreifen und Verantwortung zu übernehmen.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- CTA Section -->
 <section class="cta-section py-5 py-md-8">

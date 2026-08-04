@@ -9,16 +9,14 @@ import { Supporter } from './pages/supporter/supporter';
 import { TermsAndConditions } from './pages/terms-and-conditions/terms-and-conditions';
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { Ben } from './pages/about-us/ben/ben';
+import { Hadi } from './pages/about-us/hadi/hadi';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: Home },
-  {
-    path: 'about-us', component: AboutUs
-  },
-    {
-    path: 'about-us/ben', component: Ben
-  },
+  { path: 'about-us', component: AboutUs },
+  { path: 'about-us/ben', component: Ben },
+  { path: 'about-us/hadi', component: Hadi },
   { path: 'supporter', component: Supporter },
   { path: 'contact', component: Contact },
   { path: 'concept', component: Concept },
