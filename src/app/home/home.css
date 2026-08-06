@@ -284,11 +284,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    background-image: url('../../../assets/images/home-banner.jpeg') !important;
-  }
-}
 .hero-section { 
   background-image: url('../../assets/images/1.png') !important;
 }
