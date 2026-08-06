@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url('../../../assets/images/supporter-banner.jpeg') !important;
+  background-image: url('../../../assets/images/5.png') !important;
   /* min-height: 400px; */
   position: relative;
 
@@ -26,6 +26,11 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    background-image: url('../../../assets/images/supporter-banner.jpeg') !important;
+  }
+}
 .stats-section {
   .stat-card {
     padding: 2rem;

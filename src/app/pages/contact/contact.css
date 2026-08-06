@@ -231,8 +231,14 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    background-image: url('../../../assets/images/contact-banner.jpeg') !important;
+  }
+}
+
 .hero-section {
-  background-image: url('../../../assets/images/contact-banner.jpeg') !important;
+  background-image: url('../../../assets/images/2.png') !important;
   /* min-height: 400px; */
   position: relative;
   background-size: cover;
@@ -284,5 +290,5 @@
 }
 
 select option {
-    color: black !important;
+  color: black !important;
 }

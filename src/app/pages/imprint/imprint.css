@@ -1,5 +1,10 @@
+@media (max-width: 768px) {
+  .hero-section {
+    background-image: url('../../../assets/images/impression-banner.jpeg') !important;
+  }
+}
 .hero-section {
-  background-image: url('../../../assets/images/impression-banner.jpeg') !important;
+  background-image: url('../../../assets/images/7.png') !important;
   /* min-height: 400px; */
   position: relative;
 
