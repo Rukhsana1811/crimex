@@ -10,6 +10,9 @@ import { TermsAndConditions } from './pages/terms-and-conditions/terms-and-condi
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { Ben } from './pages/about-us/ben/ben';
 import { Hadi } from './pages/about-us/hadi/hadi';
+import { Ast } from './pages/concept/ast/ast';
+import { Boxen } from './pages/concept/boxen/boxen';
+import { Hinter } from './pages/concept/hinter/hinter';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,6 +23,9 @@ export const routes: Routes = [
   { path: 'supporter', component: Supporter },
   { path: 'contact', component: Contact },
   { path: 'concept', component: Concept },
+  { path: 'concept/ast', component: Ast },
+  { path: 'concept/boxen', component: Boxen},
+  { path: 'concept/hinter', component: Hinter },
   { path: 'feedback', component: Feedback },
   { path: 'imprint', component: Imprint },
   { path: 'terms', component: TermsAndConditions },

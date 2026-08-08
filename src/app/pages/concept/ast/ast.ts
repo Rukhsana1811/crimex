@@ -1,15 +1,14 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
-import { Router } from '@angular/router';
+
 @Component({
-  selector: 'app-concept',
-  standalone: true,
-  templateUrl: './concept.html',
-  styleUrls: ['./concept.css'],
+  selector: 'app-ast',
+  imports: [],
+  templateUrl: './ast.html',
+  styleUrl: './ast.css',
 })
-export class Concept implements AfterViewInit, OnDestroy {
+export class Ast  implements AfterViewInit, OnDestroy {
   private observer?: IntersectionObserver;
 
-  constructor(private router: Router) {}
 
   ngAfterViewInit(): void {
     const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
@@ -31,17 +30,5 @@ export class Concept implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.observer?.disconnect();
-  }
-
-  navigateToAST(): void {
-   this.router.navigate(['/concept/ast']);
-  }
-
-  navigateToBoxen(): void {
-   this.router.navigate(['/concept/boxen']);
-  }
-
-   navigateToHinter(): void {
-   this.router.navigate(['/concept/hinter']);
   }
 }

@@ -180,6 +180,7 @@ body {
 
 /* Color Scheme Palette Extensions */
 .btn-orange {
+  color: white !important;
   background-color: #84B00E !important;
   border-color: #84B00E !important;
   transition: background-color 0.2s ease-in-out;
