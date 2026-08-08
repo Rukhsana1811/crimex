@@ -96,14 +96,8 @@
     }
   }
 }
-@media (max-width: 768px) {
-  .hero-section {
-    background-image: url('../../../assets/images/3.png') !important;
-  }
-}
 
 .team-section {
-  background-image: url('../../../assets/images/About-us-banner.jpeg');
   .team-card {
     text-align: center;
     transition: all 0.3s ease;
