@@ -338,3 +338,27 @@
 .bg-light {
   background-color: #f8f9fa;
 }
+
+
+  .agency-card {
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    background: white;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    text-align: center;
+
+    .agency-logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      border-color: #84b00e;
+      cursor: pointer;
+    }
+  }
