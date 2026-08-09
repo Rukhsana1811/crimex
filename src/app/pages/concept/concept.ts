@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class Concept implements AfterViewInit, OnDestroy {
   private observer?: IntersectionObserver;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngAfterViewInit(): void {
     const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
@@ -34,14 +34,26 @@ export class Concept implements AfterViewInit, OnDestroy {
   }
 
   navigateToAST(): void {
-   this.router.navigate(['/concept/ast']);
+    this.router.navigate(['/concept/ast']);
   }
 
   navigateToBoxen(): void {
-   this.router.navigate(['/concept/boxen']);
+    this.router.navigate(['/concept/boxen']);
   }
 
-   navigateToHinter(): void {
-   this.router.navigate(['/concept/hinter']);
+  navigateToHinter(): void {
+    this.router.navigate(['/concept/hinter']);
+  }
+
+  navigateToStark(): void {
+    this.router.navigate(['/concept/stark']);
+  }
+
+  navigateToDeeskalation(): void {
+    this.router.navigate(['/concept/deeskalation']);
+  }
+
+  navigateToSpurwechsel(): void {
+    this.router.navigate(['/concept/spurwechsel']);
   }
 }

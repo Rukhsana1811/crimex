@@ -13,6 +13,9 @@ import { Hadi } from './pages/about-us/hadi/hadi';
 import { Ast } from './pages/concept/ast/ast';
 import { Boxen } from './pages/concept/boxen/boxen';
 import { Hinter } from './pages/concept/hinter/hinter';
+import { Stark } from './pages/concept/stark/stark';
+import { Deeskalation } from './pages/concept/deeskalation/deeskalation';
+import { Spurwechsel } from './pages/concept/spurwechsel/spurwechsel';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -26,6 +29,9 @@ export const routes: Routes = [
   { path: 'concept/ast', component: Ast },
   { path: 'concept/boxen', component: Boxen},
   { path: 'concept/hinter', component: Hinter },
+  { path: 'concept/stark', component: Stark },
+  { path: 'concept/deeskalation', component: Deeskalation },
+  { path: 'concept/spurwechsel', component: Spurwechsel },
   { path: 'feedback', component: Feedback },
   { path: 'imprint', component: Imprint },
   { path: 'terms', component: TermsAndConditions },
