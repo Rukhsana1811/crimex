@@ -1,8 +1,10 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
+  imports: [RouterLink],
   templateUrl: './imprint.html',
   styleUrls: ['./imprint.css'],
 })
