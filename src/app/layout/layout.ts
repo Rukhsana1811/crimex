@@ -15,7 +15,7 @@ export class Layout implements OnInit, OnDestroy {
   isMenuOpen = false;
   private scrollListener?: () => void;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.scrollListener = this.onScroll.bind(this);
@@ -97,4 +97,10 @@ export class Layout implements OnInit, OnDestroy {
       });
     }
   }
+
+  openWhatsapp() {
+    const url = 'https://wa.me/message/DM7WN3JLOCYWB1';
+    window.open(url, '_blank');
+  }
+  
 }
