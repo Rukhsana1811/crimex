@@ -56,4 +56,12 @@ export class Concept implements AfterViewInit, OnDestroy {
   navigateToSpurwechsel(): void {
     this.router.navigate(['/concept/spurwechsel']);
   }
+
+  navigateToTracks(): void {
+    this.router.navigate(['/concept/tracks']);
+  }
+
+  navigateToStatt(): void {
+    this.router.navigate(['/concept/statt']);
+  }
 }

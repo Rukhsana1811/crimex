@@ -1,12 +1,12 @@
-import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  templateUrl: './contact.html',
-  styleUrl: './contact.css',
+  selector: 'app-statt',
+  imports: [],
+  templateUrl: './statt.html',
+  styleUrl: './statt.css',
 })
-export class Contact implements AfterViewInit, OnDestroy  {
+export class Statt implements AfterViewInit, OnDestroy {
   private observer?: IntersectionObserver;
 
   ngAfterViewInit(): void {
@@ -29,15 +29,5 @@ export class Contact implements AfterViewInit, OnDestroy  {
 
   ngOnDestroy(): void {
     this.observer?.disconnect();
-  }
-
-  openMap(): void {
-    const mapUrl = 'https://maps.app.goo.gl/FeJXNsfPohmBqC7q9';
-        window.open(mapUrl, '_blank');
-  }
-
-  openWhatsapp() {
-    const url = 'https://wa.me/message/DM7WN3JLOCYWB1';
-    window.open(url, '_blank');
   }
 }

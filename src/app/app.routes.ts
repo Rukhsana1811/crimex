@@ -17,6 +17,8 @@ import { Stark } from './pages/concept/stark/stark';
 import { Deeskalation } from './pages/concept/deeskalation/deeskalation';
 import { Spurwechsel } from './pages/concept/spurwechsel/spurwechsel';
 import { Interessantes } from './pages/interessantes/interessantes';
+import { Tracks } from './pages/concept/tracks/tracks';
+import { Statt } from './pages/concept/statt/statt';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -33,6 +35,8 @@ export const routes: Routes = [
   { path: 'concept/stark', component: Stark },
   { path: 'concept/deeskalation', component: Deeskalation },
   { path: 'concept/spurwechsel', component: Spurwechsel },
+  { path: 'concept/statt', component: Statt },
+  { path: 'concept/tracks', component: Tracks },
   { path: 'feedback', component: Feedback },
   { path: 'imprint', component: Imprint },
   { path: 'terms', component: TermsAndConditions },
