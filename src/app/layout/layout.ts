@@ -43,6 +43,9 @@ export class Layout implements OnInit, OnDestroy {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+  redirectToContact() {
+    this.router.navigate(['/contact']);
+  }
   closeMenu(): void {
     this.isMenuOpen = false;
   }

@@ -30,4 +30,9 @@ export class Contact implements AfterViewInit, OnDestroy  {
   ngOnDestroy(): void {
     this.observer?.disconnect();
   }
+
+  openMap(): void {
+    const mapUrl = 'https://maps.app.goo.gl/FeJXNsfPohmBqC7q9';
+        window.open(mapUrl, '_blank');
+  }
 }

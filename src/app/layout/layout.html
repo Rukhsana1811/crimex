@@ -40,6 +40,12 @@
           <a class="nav-link text-dark defy-link" routerLink="/concept" routerLinkActive="active"
             (click)="closeMenu()">Konzepte</a>
         </li>
+        
+        <li class="nav-item px-xl-2">
+          <a class="nav-link text-dark defy-link" routerLink="/interessantes" routerLinkActive="active"
+            (click)="closeMenu()">Interessantes</a>
+        </li>
+        
 
         <li class="nav-item px-xl-2">
           <a class="nav-link text-dark defy-link" routerLink="/supporter" routerLinkActive="active"
@@ -59,8 +65,8 @@
       </ul>
 
       <div class="d-flex defy-cta-group ms-xl-4 align-items-center justify-content-center">
-        <a href="#" class="btn btn-defy-orange me-2" (click)="closeMenu()">Projekt&nbsp;Anfragen</a>
-        <a href="#" class="btn btn-defy-orange" (click)="closeMenu()">Jetzt&nbsp;Unterstützen</a>
+        <a class="btn btn-defy-orange me-2" (click)="redirectToContact()">Projekt&nbsp;Anfragen</a>
+        <a class="btn btn-defy-orange" (click)="redirectToContact()">Jetzt&nbsp;Unterstützen</a>
       </div>
 
     </div>

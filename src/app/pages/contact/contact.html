@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
-        <div class="info-card reveal reveal-right">
+        <div class="info-card reveal reveal-right" (click)="openMap()">
           <div class="info-icon-wrapper mb-4">
             <i class="bi bi-geo-alt text-orange fs-1"></i>
           </div>
@@ -207,61 +207,6 @@
   </div>
 </section>
 
-<!-- Sales Inquiry Section -->
-<section class="sales-section py-5 py-md-8 bg-dark">
-  <div class="container-fluid px-4 px-md-5">
-    <div class="row g-4 align-items-center">
-      <div class="col-lg-6">
-        <div class="sales-content reveal reveal-left">
-          <h5 class="fw-bold mb-3 text-white"><p>Wir freuen uns darauf, Sie kennenzulernen und gemeinsam einen Weg zu finden, junge Menschen zu stärken,
-          Perspektiven zu schaffen und Prävention lebendig werden zu lassen.</p>
-</h5>
-
-      <p class="text-white">Sprechen Sie uns an – wir freuen uns auf Ihre Nachricht oder Ihren Anruf.</p>
-          <!-- <p class="text-white-50 mb-4">Unser Team hilft dir, das perfekte Präventionsangebot für deine Schule oder
-            Einrichtung zusammenzustellen.
-          </p> -->
-          <!-- <ul class="sales-list">
-            <li class="text-white-50 mb-3"><i class="bi bi-check-circle text-orange me-2"></i>Persönliche Beratung auf
-              Augenhöhe
-            </li>
-            <li class="text-white-50 mb-3"><i class="bi bi-check-circle text-orange me-2"></i>Individuelle Workshops
-              (z.B. AST oder KIck)</li>
-            <li class="text-white-50 mb-3"><i class="bi bi-check-circle text-orange me-2"></i>Planung von JVA-Besuchen
-            </li>
-            <li class="text-white-50"><i class="bi bi-check-circle text-orange me-2"></i>Direkte Ansprechpartner: Steven
-              & Ben</li>
-          </ul> -->
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="sales-card reveal reveal-right">
-          <h3 class="fs-5 fw-bold mb-4 text-white">Formularfelder für Termin</h3>
-          <form class="sales-form">
-            <div class="mb-3">
-              <input type="text" class="form-control form-input" placeholder="Vollständiger Name" required>
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control form-input" placeholder="E-Mail Adresse" required>
-            </div>
-            <div class="mb-3">
-              <input type="tel" class="form-control form-input" placeholder="Telefonnummer" required>
-            </div>
-            <div class="mb-3">
-              <select class="form-control form-input" required>
-                <option value="">Bevorzugte Zeit</option>
-                <option value="morning">Morgen (9AM-12PM)</option>
-                <option value="afternoon">Nachmittag (12PM-3PM)</option>
-                <option value="evening">Abend (3PM-6PM)</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-orange w-100">Termin vereinbaren</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Office Locations Section -->
 <section class="locations-section py-5 py-md-8">
@@ -270,14 +215,14 @@
     <div class="row g-4">
       <div class="col-lg-6 col-md-6">
         <div class="location-card reveal reveal-left">
-          <h3 class="fs-6 fw-bold mb-3">Rostock Headquarters</h3>
+          <h3 class="fs-6 fw-bold mb-3">Rostock Hauptniederlassen</h3>
           <p class="text-muted mb-2"><strong>Hechtraben 22,</strong></p>
           <p class="text-muted small mb-3"> 18198 Kritzmow</p>
         </div>
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="location-card reveal reveal-up">
-          <h3 class="fs-6 fw-bold mb-3">Hanover Branch</h3>
+          <h3 class="fs-6 fw-bold mb-3">Hannover Zweigniederlassung</h3>
           <p class="text-muted small mb-3">Kirchstr. 4</p>
           <p class="text-muted small"> 31655 Beckedorf</p>
         </div>
@@ -295,7 +240,6 @@
         <p class="fs-5 text-white-50 mb-4">Unser Team ist bereit, dir zu helfen. Kontaktiere uns noch heute und lass uns
           besprechen, wie CrimEX deine Jugendlichen unterstützen kann.</p>
         <div class="d-flex gap-3 justify-content-center flex-wrap">
-          <a href="mailto:contact@crimex.com" class="btn btn-orange btn-lg">E-Mail</a>
           <a href="tel:+15551234567" class="btn btn-outline-orange btn-lg">Anrufen</a>
         </div>
       </div>

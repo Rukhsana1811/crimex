@@ -16,6 +16,7 @@ import { Hinter } from './pages/concept/hinter/hinter';
 import { Stark } from './pages/concept/stark/stark';
 import { Deeskalation } from './pages/concept/deeskalation/deeskalation';
 import { Spurwechsel } from './pages/concept/spurwechsel/spurwechsel';
+import { Interessantes } from './pages/interessantes/interessantes';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -35,5 +36,6 @@ export const routes: Routes = [
   { path: 'feedback', component: Feedback },
   { path: 'imprint', component: Imprint },
   { path: 'terms', component: TermsAndConditions },
-  { path: 'privacy', component: PrivacyPolicy }
+  { path: 'privacy', component: PrivacyPolicy },
+  { path: 'interessantes', component: Interessantes }
 ];
