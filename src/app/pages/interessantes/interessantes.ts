@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'app-interessantes',
@@ -6,4 +6,28 @@ import { Component } from '@angular/core';
   templateUrl: './interessantes.html',
   styleUrl: './interessantes.css',
 })
-export class Interessantes {}
+export class Interessantes  implements AfterViewInit, OnDestroy  {
+private observer?: IntersectionObserver;
+
+  ngAfterViewInit(): void {
+    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
+
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            this.observer?.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    elements.forEach((element) => this.observer?.observe(element));
+  }
+
+  ngOnDestroy(): void {
+    this.observer?.disconnect();
+  }
+}
